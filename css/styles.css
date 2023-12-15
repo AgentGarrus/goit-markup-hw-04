@@ -31,6 +31,7 @@ img {
 
 .page-header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-list {
@@ -76,6 +77,7 @@ a {
     height: 4px;
     border-radius: 2px;
     content: "";
+    color: #404BBF;
     background-color: #404BBF;
     left: 0;
     bottom: -1px;
@@ -101,6 +103,7 @@ a {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -110,11 +113,13 @@ a {
 
 .section-one {
     background-color: #2e2f42;
+    max-width: 1440px;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    margin: 0 auto;
 }
 
 .header-one {
@@ -143,6 +148,7 @@ a {
     cursor: pointer;
     display: block;
     margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bcolor:hover,
@@ -261,6 +267,7 @@ a {
     color: #F4F4FD;
     background-color: #4D5AE5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -394,6 +401,7 @@ a {
 
 .boxfooter {
     display: flex;
+    align-items: baseline;
 }
 
 .logo-footer {
@@ -423,6 +431,7 @@ a {
 .footer-socials-team {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials-link {
@@ -436,8 +445,11 @@ a {
     border-radius: 50%;
 }
 
-.footer-socials-link:hover,
-.footer-address-link:focus {
+.footer-socials-link:hover {
+    background-color: #31D0AA;
+}
+
+.footer-socials-link:focus {
     background-color: #31D0AA;
 }
 
