@@ -63,13 +63,12 @@ a {
     color: #2E2F42;
     display: block;
     padding: 24px 0;
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.activity {
-    display: block;
-    position: relative;
     color: #404BBF;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.activity::after {
@@ -167,7 +166,6 @@ a {
 .advantage-box {
     display: flex;
     background-color: #f4f4fd;
-    width: 264px;
     height: 112px;
     border-radius: 4px;
     border: 1px solid #8e8f99;
